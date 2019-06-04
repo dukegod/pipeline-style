@@ -1,7 +1,7 @@
 class App {
-  constructor(params) {}
-
   render() {
-    return <div>{'90'}</div>;
+    // return (<div>90</div>);
   }
 }
+
+export default App;

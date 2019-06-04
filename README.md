@@ -12,7 +12,7 @@
 * [gitignore](#gitignore)
 * [Prettier](#Prettier)
 * [git-check](#git-check)
-* []()
+* [eslint](#eslint)
 * [检测工具](#)
 * [测试工具](#)
 * [编译打包工具](#)
@@ -116,7 +116,17 @@ npm i --save-dev prettier
 
 `.prettierignore`
 
+### eslint
+
+```js
+yarn add --dev eslint-config-prettier eslint-plugin-prettier
+
+yarn add eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react -D
+```
+
 ### git-check
+
+配置git提交的相关的配置项说明
 
 #### husky
 
@@ -141,4 +151,3 @@ yarn add husky --dev
   }
 }
 ```
-

@@ -3,7 +3,7 @@ function name(params) {
   console.log(NAME);
 }
 
-let i = 90;
+let i = "90";
 
 var arr = [12, 34];
 

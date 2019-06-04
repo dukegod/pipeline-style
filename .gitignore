@@ -1,0 +1,19 @@
+# 系统默认文件
+.DS_Store
+*.tmp
+*.bak
+
+#.idea
+*.idea
+
+# vscode
+.settings
+
+# node
+node_modules/*
+yarn.lock
+package-lock.json
+npm-debug.log
+
+# 编译文件
+

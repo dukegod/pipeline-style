@@ -1,0 +1,39 @@
+{
+  "name": "pipeline-style",
+  "version": "1.0.0",
+  "description": "pipeline style",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write './test/**/*.js' './test/**/*.css' './test/**/*.less' './test/**/*.scss' './test/**/*.vue' './test/**/*.jsx'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dukegod/pipeline-style.git"
+  },
+  "keywords": [
+    "pipeline"
+  ],
+  "author": "hui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dukegod/pipeline-style/issues"
+  },
+  "homepage": "https://github.com/dukegod/pipeline-style#readme",
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "prettier": "1.17.1"
+  },
+  {
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run prettier",
+        "pre-push": "npm test"
+      }
+    }
+  }
+}

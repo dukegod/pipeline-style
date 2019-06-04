@@ -28,12 +28,11 @@
     "husky": "^2.3.0",
     "prettier": "1.17.1"
   },
-  {
-    "husky": {
-      "hooks": {
-        "pre-commit": "npm run prettier",
-        "pre-push": "npm test"
-      }
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm test"
     }
   }
+
 }

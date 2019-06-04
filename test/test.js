@@ -12,5 +12,4 @@ let obj = {
   y: 2,
 };
 
-var st = "90";
-
+var st = '90';

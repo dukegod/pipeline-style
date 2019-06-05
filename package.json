@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint --fix './test/**/*.{jsx, js}'",
+    "eslint": "eslint --fix",
     "prettier": "prettier --write './test/**/*.js' './test/**/*.css' './test/**/*.less' './test/**/*.scss' './test/**/*.vue' './test/**/*.jsx'"
   },
   "repository": {
@@ -40,6 +40,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-add": "npm run prettier",
       "pre-commit": "lint-staged",
       "pre-push": "npm run prettier"
     }

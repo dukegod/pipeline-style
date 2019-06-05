@@ -40,11 +40,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": ["npm run prettier ","lint-staged"]
+      "pre-commit": ["lint-staged"]
     }
   },
   "lint-staged": {
-    "test/**/*.js": ["esline","git add"]
+    "*.{js,jsx}": ["npm run esline", "npm run prettier", "git add"],
+    "*.{css, less, scss, vue} ":["npm run prettier", "git add"]
   },
   "dependencies": {}
 }

@@ -3,4 +3,6 @@ function name() {
   console.log(NAME);
 }
 
-name();
+      name();
+
+      const st;

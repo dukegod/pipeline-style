@@ -3,5 +3,4 @@ function name() {
   console.log(NAME);
 }
 
-
-    name();
+name();

@@ -40,13 +40,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-add": "npm run prettier",
-      "pre-commit": "'lint-staged', 'npm run prettier'",
-      "pre-push": "npm run prettier"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "test/**/*.js": "eslint"
+    "test/**/*.js": ["prettier --write", "esline","git add"]
   },
   "dependencies": {}
 }

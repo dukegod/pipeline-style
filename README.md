@@ -11,8 +11,10 @@
 * [editorConfig](#editorconfig)
 * [gitignore](#gitignore)
 * [Prettier](#Prettier)
-* [git-check](#git-check)
 * [eslint](#eslint)
+* [git-check](#git-check) 
+* [lint-staged](#lint-staged)
+* [husky](#husky)
 * [检测工具](#)
 * [测试工具](#)
 * [编译打包工具](#)
@@ -150,4 +152,18 @@ yarn add husky --dev
     }
   }
 }
+```
+
+### lint-staged
+
+```js
+yarn add --dev lint-staged
+```
+
+修改`package.json`
+
+```js
+"lint-staged": {
+    "src/**/*.js": "eslint"
+  }
 ```

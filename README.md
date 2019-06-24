@@ -1,12 +1,13 @@
 # pipeline-style
 
-## 项目开发规范：
+## 项目开发规范
 
 * [项目命名规范](#项目命名)
 * [目录命名规范](#目录命名)
 * [文件命名规范](#文件命名)
+* [注释规范](#注释规范)
 * [HTML](#HTML)
-* [CSS/SCSS/LESS](#CSS/SCSS/LESS)
+* [CSS/SCSS/LESS](#CSS-SCSS-LESS)
 * [JavaScript](#JavaScript)
 * [editorConfig](#editorconfig)
 * [gitignore](#gitignore)
@@ -42,6 +43,31 @@ my-project-name
 * my-css.css
 * my-html.html
 
+### 注释规范
+
+页面功能注释 与 函数注释
+
+页面功能注释(js, css, html)
+
+```conf
+/**
+ * @description
+ * @author
+ * @date
+ */
+```
+
+函数注释
+
+```conf
+/**
+ * @description
+ * @param
+ * @author
+ * @date
+ */
+```
+
 ### HTML
 
 * 缩进使用soft tab（2个空格）
@@ -49,7 +75,7 @@ my-project-name
 * 在属性上，使用双引号，不要使用单引号
 * 属性名全小写，用中划线做分隔符：data-id
 
-### CSS/SCSS/LESS
+### CSS-SCSS-LESS
 
 * 缩进使用soft tab（2个空格）
 * 每个属性声明末尾都要加分号

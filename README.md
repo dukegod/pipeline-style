@@ -85,7 +85,7 @@ my-project-name
 * 类名使用小写字母，以中划线分隔:sub-class
 * id采用驼峰式命名: mainFirst
 * scss中的变量、函数、混合、placeholder采用驼峰式命名
-* [BEN规范](./BEM.md)
+* [BEM规范](./BEM.md)
 
 ### JavaScript
 

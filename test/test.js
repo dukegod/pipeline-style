@@ -12,4 +12,5 @@ function name() {
 name();
 
 const st = 90;
+var st = 999;
 console.log(90);

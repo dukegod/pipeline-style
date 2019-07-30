@@ -9,6 +9,7 @@ function name() {
   console.log(NAME);
 }
 
-      name();
+name();
 
-      const st;
+const st = 90;
+console.log(90);

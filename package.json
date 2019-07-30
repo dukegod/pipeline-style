@@ -44,7 +44,7 @@
     }
   },
   "lint-staged": {
-    "*.{js}": ["npm run eslint", "npm run prettier", "git add"],
+    "*.{js}": ["npm run eslint", "git add"],
     "*.{css, less, scss, vue} ":["npm run prettier", "git add"]
   },
   "dependencies": {}

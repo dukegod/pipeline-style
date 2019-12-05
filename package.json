@@ -10,7 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint --fix './test/**/*.js'",
-    "prettier": "prettier --write './test/**/*.js' './test/**/*.css' './test/**/*.less' './test/**/*.scss' './test/**/*.vue' './test/**/*.jsx'"
+    "prettier": "prettier --write './test/**/*.js' './test/**/*.css' './test/**/*.less' './test/**/*.scss' './test/**/*.vue' './test/**/*.jsx'",
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -36,16 +38,31 @@
     "eslint-plugin-react": "^7.13.0",
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
-    "prettier": "1.17.1"
+    "prettier": "1.17.1",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "git-cz": "^3.3.0",
+    "standard-version": "^7.0.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": ["lint-staged"]
+      "pre-commit": [
+        "lint-staged"
+      ],
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
-    "*.{js}": ["npm run eslint", "npm run prettier", "git add"],
-    "*.{css, less, scss, vue} ":["npm run prettier", "git add"]
+    "*.{js}": [
+      "npm run eslint",
+      "npm run prettier",
+      "git add"
+    ],
+    "*.{css, less, scss, vue} ": [
+      "npm run prettier",
+      "git add"
+    ]
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

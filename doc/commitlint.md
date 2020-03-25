@@ -1,3 +1,4 @@
+# 配置git提交规范
 
 ## commitlint
 

@@ -5,12 +5,7 @@ module.exports = {
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject'],
   // 根据不同项目配置不同的模块。
-  scopes: [
-    "首页模块",
-    "列表",
-    "详情模块",
-    "new"
-  ],
+  scopes: [],
   types: {
     chore: {
       description: '编写日常事务',

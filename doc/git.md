@@ -14,9 +14,7 @@
 
 ```js
 npm install --save-dev git-cz 
-
 // or
-
 yarn add git-cz
 ```
 
@@ -70,7 +68,39 @@ yarn add husky
 }
 ```
 
-6、编写 release 命令
+6、lint-staged 提交之前做代码校验与格式化
+
+```js
+npm install --save-dev lint-staged
+// or
+yarn add --dev lint-staged
+```
+
+修改`package.json`
+
+```js
+ "husky": {
+    "hooks": {
+      "pre-commit": [
+        "lint-staged"
+      ],
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "npm run eslint",
+      "npm run prettier",
+      "git add"
+    ],
+    "*.{css, less, scss, vue} ": [
+      "npm run prettier",
+      "git add"
+    ]
+  },
+```
+
+7、编写 release 命令
 
 目的：根据 commit 自动修改版本号，自动生成 changelog.md 文件。发布上线的时候，执行一下即可。
 

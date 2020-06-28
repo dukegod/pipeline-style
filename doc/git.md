@@ -91,11 +91,13 @@ yarn add --dev lint-staged
     "*.{js}": [
       "npm run eslint",
       "npm run prettier",
-      "git add"
+      "git add",
+      "npm run commit"
     ],
     "*.{css, less, scss, vue} ": [
       "npm run prettier",
-      "git add"
+      "git add",
+      "npm run commit"
     ]
   },
 ```

@@ -1,5 +1,7 @@
 # prettier
 
+可以认为作为`editorConfig`的补充，支持的配置更多
+
 ## 配置方法 
 
 三种方式支持对Prettier进行配置：

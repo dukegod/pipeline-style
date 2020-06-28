@@ -149,7 +149,6 @@ npm i --save-dev prettier
 ```js
 yarn add --dev eslint-config-prettier eslint-plugin-prettier
 
-yarn add eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react -D
 ```
 
 ### git-check

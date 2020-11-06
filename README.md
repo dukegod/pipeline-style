@@ -95,16 +95,26 @@ my-project-name
 
 ### editorconfig
 
-编辑器适配
+关注不同的操作系统下编辑器对于代码的格式化
 
 * charset = utf-8 ： 设定字符
+* end_of_line = lf ： Unix-style
 * indent_style = space ：缩进格式
 * indent_size = 2 ：缩进大小
-* end_of_line = lf ： Unix-style
 * insert_final_newline = true ： 默认最后一行留空
 * trim_trailing_whitespace = true ：去除行以后的空白
 * [{, }] ：定向匹配文件
 
-### prettier + standard + eslint
+[详情](./doc/editorConfig.md)
+
+### prettier 
+
+更加关注于代码格式化
+
+[详情](./doc/prettier.md)
+
+### eslint
+
+更加关注与代码质量
 
 [详情](./doc/eslint.md)
